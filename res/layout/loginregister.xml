@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#28a495"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight=".08"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/loginregister_logo_width"
+                    android:layout_height="@dimen/loginregister_logo_height"
+                    android:src="@drawable/login_reg_logo" />
+
+                <LinearLayout
+                    android:id="@+id/ll_login_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/loginregister_margin_bottom"
+                    android:layout_marginTop="@dimen/loginregister_margin_top"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="@dimen/loginregister_exploreicon_width"
+                            android:layout_height="@dimen/loginregister_exploreicon_height"
+                            android:src="@drawable/explore_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Explore"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/loginregister_exploretext_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/iv_connect"
+                            android:layout_width="@dimen/loginregister_exploreicon_width"
+                            android:layout_height="@dimen/loginregister_exploreicon_height"
+                            android:src="@drawable/land_connect_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Connect"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/loginregister_exploretext_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/iv_recomended"
+                            android:layout_width="@dimen/loginregister_exploreicon_width"
+                            android:layout_height="@dimen/loginregister_exploreicon_height"
+                            android:src="@drawable/recommend_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Recommend"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/loginregister_exploretext_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_submit"
+                    android:layout_width="@dimen/loginregister_submitbtn_width"
+                    android:layout_height="@dimen/loginregister_submitbtn_height"
+                    android:background="@drawable/login_register_bg"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_login"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".43"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="@dimen/loginregister_logintext_width"
+                            android:layout_height="@dimen/loginregister_logintext_height"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="LOGIN"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/loginregister_logintext_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".14"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/loginregister_orlogo_width"
+                            android:layout_height="@dimen/loginregister_orlogo_height"
+                            android:background="@drawable/circle_icon"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/tv_or"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="OR"
+                                android:textColor="#39cbb9"
+                                android:textSize="@dimen/loginregister_orlogo_textsize" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_register"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".43"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_register"
+                            android:layout_width="@dimen/loginregister_regtext_width"
+                            android:layout_height="@dimen/loginregister_regtext_height"
+                            android:duplicateParentState="true"
+                            android:text="REGISTER"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/loginregister_logintext_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/loginregister_submitbtn_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".30"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:duplicateParentState="true"
+                            android:gravity="center"
+                            android:text="Log In With"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/loginregister_logintext_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight=".90"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight=".50"
+                            android:gravity="center|right"
+                            android:paddingRight="7dp" >
+
+                            <ImageView
+                                android:id="@+id/iv_facebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/fb_icon" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".50"
+                            android:gravity="center|left"
+                            android:orientation="vertical"
+                            android:paddingLeft="7dp" >
+
+                            <ImageView
+                                android:id="@+id/iv_gplus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/gplus_icon" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/splash_copyright_logo_width"
+                    android:layout_height="@dimen/splash_copyright_logo_height"
+                    android:src="@drawable/copyright_logo" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

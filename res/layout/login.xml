@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#28a495"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dashboard_header"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="@dimen/dashboard_slider_width"
+                android:layout_height="match_parent"
+                android:background="#208377"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/dashboard_logo_width"
+                    android:layout_height="@dimen/dashboard_logo_height"
+                    android:src="@drawable/back_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/textView1"
+                    android:layout_width="@dimen/login_header_text_width"
+                    android:layout_height="@dimen/login_header_text_height"
+                    android:background="@drawable/login_text" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/cointainer_dropshadow"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight=".08"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/login_logo_width"
+                    android:layout_height="@dimen/login_logo_height"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/login_reg_logo" />
+
+                <LinearLayout
+                    android:id="@+id/ll_logintxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center|left"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/login_text_marginleft" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log in with"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/login_logintext_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_social_cointainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <com.facebook.widget.LoginButton
+                        xmlns:facebook="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/login_button"
+                        style="@style/FacebookLoginButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/login_facebookbtn_height"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/facebook_bg"
+                        android:textColor="@color/transparent"
+                        android:visibility="visible"
+                        facebook:login_text="@string/loginFacebookButton" />
+
+                    <ImageView
+                        android:id="@+id/iv_gplus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/login_facebookbtn_height"
+                        android:background="@drawable/google_bg" />
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/btn_gplus_signin"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_linkedin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/linkedin_icon"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_login_container"
+                    android:layout_width="@dimen/login_body_width"
+                    android:layout_height="@dimen/login_body_height"
+                    android:layout_marginTop="@dimen/login_body_margintop"
+                    android:background="@drawable/login_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="@dimen/login_emailicon_width"
+                                android:layout_height="@dimen/login_emailicon_height"
+                                android:src="@drawable/email_icon" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".30"
+                            android:gravity="center|left"
+                            android:padding="2dp" >
+
+                            <EditText
+                                android:id="@+id/ed_email"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/login_edittext_height"
+                                android:background="@color/transparent"
+                                android:focusable="false"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center|left"
+                                android:hint="Email"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textSize="@dimen/login_logintext_size" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="@dimen/login_pswicon_width"
+                                android:layout_height="@dimen/login_pswicon_height"
+                                android:src="@drawable/password_icon" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".30"
+                            android:gravity="center|left"
+                            android:padding="2dp" >
+
+                            <EditText
+                                android:id="@+id/ed_password"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/login_edittext_height"
+                                android:background="@color/transparent"
+                                android:gravity="center|left"
+                                android:hint="Password"
+                                android:focusable="false"
+                                android:focusableInTouchMode="true"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textSize="@dimen/login_logintext_size" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_login"
+                    android:layout_width="@dimen/login_submitbtn_width"
+                    android:layout_height="@dimen/login_submitbtn_height"
+                    android:layout_marginTop="@dimen/login_signintn_margintop"
+                    android:background="@drawable/submit_btn_bg"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUBMIT"
+                        android:textColor="#949393"
+                        android:textSize="@dimen/login_submitbtn_textsize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_copyright_logo"
+                    android:layout_width="@dimen/splash_copyright_logo_width"
+                    android:layout_height="@dimen/splash_copyright_logo_height"
+                    android:src="@drawable/copyright_logo" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

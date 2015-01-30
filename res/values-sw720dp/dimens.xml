@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">10dip</dimen>
+    <dimen name="activity_vertical_margin">10dip</dimen>
+    <dimen name="slidingmenu_shadow_width">5dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    
+    <dimen  name="dashboard_square_bg">330dp</dimen>
+    <dimen  name="dashboard_icon">200dp</dimen>
+    <dimen  name="dashboard_header">72dp</dimen>
+    <dimen  name="dashboard_devider">4dp</dimen>
+    <dimen  name="dashboard_slider_width">85dp</dimen>
+    <dimen  name="dashboard_logo_height">35dp</dimen>
+    <dimen  name="dashboard_logo_width">210dp</dimen>
+    <dimen  name="dashboard_icontextsize">35sp</dimen>
+    <dimen  name="dashboard_search_bg_height">100dp</dimen>
+    <dimen  name="dashboard_search_bg_width">670dp</dimen>    
+    
+    <dimen  name="slide_dashboard_height">50dp</dimen>
+    
+    <dimen  name="splash_copyright_logo_height">35dp</dimen>
+    <dimen  name="splash_copyright_logo_width">335dp</dimen>
+    <dimen  name="splash_logo_height">200dp</dimen>
+    <dimen  name="splash_logo_width">160dp</dimen>
+    
+    <dimen  name="loginregister_logo_height">180dp</dimen>
+    <dimen  name="loginregister_logo_width">165dp</dimen>
+    <dimen  name="loginregister_submitbtn_height">130dp</dimen>
+    <dimen  name="loginregister_submitbtn_width">560dp</dimen>
+    <dimen  name="loginregister_logintext_width">125dp</dimen>
+    <dimen  name="loginregister_logintext_height">30dp</dimen>
+    <dimen  name="loginregister_logintext_size">32sp</dimen>
+    <dimen  name="loginregister_regtext_width">160dp</dimen>
+    <dimen  name="loginregister_regtext_height">30dp</dimen>
+    <dimen  name="loginregister_orlogo_width">60dp</dimen>
+    <dimen  name="loginregister_orlogo_height">60dp</dimen>
+    <dimen  name="loginregister_orlogo_textsize">28sp</dimen>
+    <dimen  name="loginregister_exploreicon_width">158dp</dimen>
+    <dimen  name="loginregister_exploreicon_height">158dp</dimen>
+    <dimen  name="loginregister_exploretext_size">30sp</dimen>
+    <dimen  name="loginregister_recomended_left">39dp</dimen>
+    <dimen  name="loginregister_recomended_right">39dp</dimen>
+    
+    
+    <dimen  name="login_logo_width">135sp</dimen>
+    <dimen  name="login_logo_height">160sp</dimen>
+    <dimen  name="login_header_text_width">100dp</dimen>
+    <dimen  name="login_header_text_height">35dp</dimen>
+    <dimen  name="login_facebookbtn_width">300dp</dimen>
+    <dimen  name="login_facebookbtn_height">100dp</dimen>
+    <dimen  name="login_submitbtn_width">585dp</dimen>
+    <dimen  name="login_submitbtn_height">100dp</dimen>
+    <dimen  name="login_submitbtn_textsize">30sp</dimen>
+    <dimen  name="login_body_width">585dp</dimen>
+    <dimen  name="login_body_height">240dp</dimen>
+    <dimen  name="login_text_marginleft">75dp</dimen>
+    <dimen  name="login_emailicon_width">80dp</dimen>
+    <dimen  name="login_emailicon_height">50dp</dimen>
+    <dimen  name="login_pswicon_width">60dp</dimen>
+    <dimen  name="login_pswicon_height">50dp</dimen>
+    <dimen  name="login_edittext_height">65dp</dimen>
+    <dimen  name="login_logintext_size">30sp</dimen>
+    <dimen  name="login_body_margintop">35dp</dimen>
+    <dimen  name="login_signintn_margintop">30dp</dimen>
+    
+   	<dimen name="register_body_width">585dp</dimen>
+    <dimen name="register_body_height">400dp</dimen>
+    <dimen name="register_body_margintop">30dp</dimen>
+    <dimen name="register_usernameicon_width">40dp</dimen>
+    <dimen name="register_usernameicon_height">40dp</dimen>
+    <dimen name="register_header_text_width">235dp</dimen>
+    <dimen name="register_header_text_height">25dp</dimen>
+    
+    <dimen name="etashuttle_header_textwidth">80dp</dimen>
+    <dimen name="etashuttle_header_textheight">15dp</dimen>
+    
+    <dimen name="valet_">12dp</dimen>
+    
+    
+</resources>

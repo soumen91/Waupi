@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#10423c"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/slide_dashboard_height"
+        android:background="#186259"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="Welcome Ronn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dashboard_slider_username_textsize" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:text="( D - 1123)"
+            android:textColor="#29a799"
+            android:textSize="@dimen/dashboard_slider_username_textsize"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dashboard_slider_userinfo_height"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@xml/colored_box1"
+            android:gravity="left|center" >
+
+            <ImageView
+                android:id="@+id/iv_hotel"
+                android:layout_width="@dimen/dashboard_slider_hotellogo_width"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/orange_logo" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/tv_hotel_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="HOTEL VILLA ORANGE"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dashboard_slider_hotelname_textsize"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/review_rating"
+                    style="@style/feedbackRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dashboard_slider_review_ratingbartop"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="1" />
+
+                <TextView
+                    android:id="@+id/tv_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="@dimen/dashboard_slider_review_margintop"
+                    android:text="432 Reviews"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dashboard_slider_hotelreview_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#28a495"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_mycoupon"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@xml/dashboard_icon_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/dashboard_slider_etashuttle_icon_width"
+                    android:layout_height="@dimen/dashboard_slider_etashuttle_icon_height"
+                    android:src="@drawable/coupon_icon" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="My Coupons"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dashboard_slider_etashuttle_icon_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_etashuttle"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@xml/dashboard_icon_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/dashboard_slider_etashuttle_icon_width"
+                    android:layout_height="@dimen/dashboard_slider_etashuttle_icon_height"
+                    android:src="@drawable/slider_etashuttle_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="ETA Shuttle"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dashboard_slider_etashuttle_icon_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkin"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@xml/dashboard_icon_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/dashboard_slider_etashuttle_icon_width"
+                    android:layout_height="@dimen/dashboard_slider_etashuttle_icon_height"
+                    android:src="@drawable/slider_checkin_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Check In"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dashboard_slider_etashuttle_icon_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_housekeeping"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@xml/dashboard_icon_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/dashboard_slider_etashuttle_icon_width"
+                    android:layout_height="@dimen/dashboard_slider_etashuttle_icon_height"
+                    android:src="@drawable/slider_housekeeping_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Housekeeping"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dashboard_slider_etashuttle_icon_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_expolreicon"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@xml/dashboard_icon_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/dashboard_slider_etashuttle_icon_width"
+                    android:layout_height="@dimen/dashboard_slider_etashuttle_icon_height"
+                    android:src="@drawable/slider_explore_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Explore"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dashboard_slider_etashuttle_icon_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_connect"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@xml/dashboard_icon_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/dashboard_slider_etashuttle_icon_width"
+                    android:layout_height="@dimen/dashboard_slider_etashuttle_icon_height"
+                    android:src="@drawable/slider_connect_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Connect"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dashboard_slider_etashuttle_icon_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@xml/dashboard_icon_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/dashboard_slider_etashuttle_icon_width"
+                    android:layout_height="@dimen/dashboard_slider_etashuttle_icon_height"
+                    android:src="@drawable/slider_feedback_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Feedback"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dashboard_slider_etashuttle_icon_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_logout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@xml/dashboard_icon_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/dashboard_slider_etashuttle_icon_width"
+                    android:layout_height="@dimen/dashboard_slider_etashuttle_icon_height"
+                    android:src="@drawable/logout_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dashboard_slider_etashuttle_icon_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

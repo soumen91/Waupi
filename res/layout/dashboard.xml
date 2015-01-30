@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#28a495" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#28a495"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dashboard_header"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_slider"
+                    android:layout_width="@dimen/dashboard_slider_width"
+                    android:layout_height="match_parent"
+                    android:background="#208377"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/slide_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/textView1"
+                        android:layout_width="@dimen/dashboard_logo_width"
+                        android:layout_height="@dimen/dashboard_logo_height"
+                        android:background="@drawable/dashboard_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center|right"
+                    android:paddingRight="5dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_db_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/db_serch_icon" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/cointainer_dropshadow"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/imageView3"
+                        android:layout_width="@dimen/dashboard_square_bg"
+                        android:layout_height="@dimen/dashboard_square_bg"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/dashboard_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_eta_shuttle"
+                            android:layout_width="@dimen/dashboard_icon"
+                            android:layout_height="@dimen/dashboard_icon"
+                            android:background="@drawable/dashboard_etashuttle_hover" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="ETA Shuttle"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dashboard_icontextsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dashboard_square_bg"
+                        android:layout_height="@dimen/dashboard_square_bg"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/dashboard_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_check_in"
+                            android:layout_width="@dimen/dashboard_icon"
+                            android:layout_height="@dimen/dashboard_icon"
+                            android:background="@drawable/dashboard_checkin_hover" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Check In"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dashboard_icontextsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dashboard_square_bg"
+                        android:layout_height="@dimen/dashboard_square_bg"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/dashboard_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_housekeeping"
+                            android:layout_width="@dimen/dashboard_icon"
+                            android:layout_height="@dimen/dashboard_icon"
+                            android:background="@drawable/dashboard_housekeeping_hover" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Housekeeping"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dashboard_icontextsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dashboard_square_bg"
+                        android:layout_height="@dimen/dashboard_square_bg"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/dashboard_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_explore_hotel"
+                            android:layout_width="@dimen/dashboard_icon"
+                            android:layout_height="@dimen/dashboard_icon"
+                            android:background="@drawable/dashboard_explorehotel_hover" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Explore Hotel"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dashboard_icontextsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dashboard_square_bg"
+                        android:layout_height="@dimen/dashboard_square_bg"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/dashboard_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_connect"
+                            android:layout_width="@dimen/dashboard_icon"
+                            android:layout_height="@dimen/dashboard_icon"
+                            android:background="@drawable/dashboard_connect_hover" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Connect"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dashboard_icontextsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dashboard_square_bg"
+                        android:layout_height="@dimen/dashboard_square_bg"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/dashboard_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_feedback"
+                            android:layout_width="@dimen/dashboard_icon"
+                            android:layout_height="@dimen/dashboard_icon"
+                            android:background="@drawable/dashboard_feedback_hover" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Feedback"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dashboard_icontextsize" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hotel_search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/dashboard_transparent_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dashboard_search_bg_width"
+                    android:layout_height="@dimen/dashboard_search_bg_height"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/search_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/et_search_hotel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/iv_search"
+                        android:background="@null"
+                        android:gravity="center|left"
+                        android:hint="Search Hotel"
+                        android:inputType="text"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="3dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:typeface="sans" />
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/db_search_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight=".20"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <ListView
+                    android:id="@+id/lv_hotellist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/transparent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="10dp"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_coach_mark"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tutorial_trans_bg"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/iv_shuttel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_explore" />
+
+            <ImageView
+                android:id="@+id/iv_search_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_list" />
+
+            <ImageView
+                android:id="@+id/iv_explore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_shuttel" />
+
+            <TextView
+                android:id="@+id/tv_shuttle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/tutorial_shuttle_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_explore_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/tutorial_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_search_list_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:text="Select your hotel from here"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/ll_ok_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginBottom="50dp"
+                android:background="@xml/toturial_button" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ok, got it!"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
